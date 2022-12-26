@@ -3,7 +3,7 @@ import { Pressable } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import useColorScheme from '../hooks/useColorScheme';
 import TabOneScreen from '../screens/TabOneScreen';
-import TabTwoScreen from '../screens/TabTwoScreen';
+import ChatScreen from '../screens/ChatScreen';
 import { RootTabParamList, RootTabScreenProps } from '../types';
 import Colors from '../constants/Colors';
 import { FontAwesome, Fontisto } from '@expo/vector-icons';
@@ -56,21 +56,21 @@ function MainTabNavigator() {
       />
       <MainTab.Screen
         name="Chats"
-        component={TabTwoScreen}
+        component={ChatScreen}
         options={{
           title: 'Chats',
         }}
       />
       <MainTab.Screen
         name="Status"
-        component={TabTwoScreen}
+        component={ChatScreen}
         options={{
           title: 'Status',
         }}
       />
       <MainTab.Screen
         name="Calls"
-        component={TabTwoScreen}
+        component={ChatScreen}
         options={{
           title: 'Calls',
         }}
