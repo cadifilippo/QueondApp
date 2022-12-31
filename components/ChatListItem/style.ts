@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { Dimension } from '../../styles/Mixins';
 
 const styles = StyleSheet.create({
   container: {
@@ -26,10 +27,14 @@ const styles = StyleSheet.create({
   lastMessage: {
     fontSize: 16,
     color: 'grey',
+    width: Dimension.width * 0.75,
   },
   date: {
     fontSize: 14,
     color: 'grey',
+    position: 'absolute',
+    top: 10,
+    right: 5,
   },
 });
 
